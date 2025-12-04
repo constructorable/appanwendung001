@@ -1,0 +1,78 @@
+{
+  "NEU": "Manifest für Progressive Web App - verbessert SEO und User Experience",
+  "name": "AppAnwendung - Web-Anwendungen für Ihr Business",
+  "short_name": "AppAnwendung",
+  "description": "Digitale Lösungen für Ihr Unternehmen - Maßgeschneiderte Web-Anwendungen für professionelle Branchen",
+  "start_url": "https://appanwendung.de",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#6366f1",
+  "background_color": "#ffffff",
+  "categories": ["business", "productivity"],
+  "screenshots": [
+    {
+      "src": "https://appanwendung.de/screenshot-1.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://appanwendung.de/screenshot-2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://appanwendung.de/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://appanwendung.de/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://appanwendung.de/maskable-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Portfolio ansehen",
+      "short_name": "Portfolio",
+      "description": "Entdecken Sie unsere Web-Anwendungen",
+      "url": "https://appanwendung.de#portfolio",
+      "icons": [{ "src": "https://appanwendung.de/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    },
+    {
+      "name": "Beratung anfragen",
+      "short_name": "Kontakt",
+      "description": "Kontaktieren Sie uns für eine unverbindliche Beratung",
+      "url": "https://appanwendung.de#kontakt",
+      "icons": [{ "src": "https://appanwendung.de/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "share_target": {
+    "action": "https://appanwendung.de#kontakt",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "media",
+          "accept": ["image/*"]
+        }
+      ]
+    }
+  }
+}

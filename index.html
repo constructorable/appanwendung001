@@ -1,13 +1,130 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <!-- NEU: Essential Meta Tags für SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Digitale Lösungen für Ihr Unternehmen - Maßgeschneiderte Web-Anwendungen für Logopäden, Steuerberater, Immobilienverwaltungen und mehr.">
-    <title>AppAnwendung | Digitale Lösungen für Ihr Business</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+    <meta name="description" content="Digitale Lösungen für Ihr Unternehmen - Maßgeschneiderte Web-Anwendungen für Steuerberater, Logopäden, Immobilienverwaltungen, Handwerk & Gartenbau in Deutschland.">
+    <meta name="keywords" content="Web-Anwendungen, Software-Lösungen, Steuerberater Software, Logopädie Management, Immobilienverwaltung, Handwerkssoftware, Gartenbau Management, digitale Lösungen, Cloud-basiert, DSGVO">
+    <meta name="author" content="AppAnwendung">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- NEU: Open Graph Tags für Social Media -->
+    <meta property="og:title" content="AppAnwendung | Maßgeschneiderte Web-Anwendungen für Ihr Business">
+    <meta property="og:description" content="Professionelle digitale Lösungen für Steuerberater, Therapeuten, Immobilien und Handwerk - Cloud-basiert, DSGVO-konform, zukunftssicher.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://appanwendung.de">
+    <meta property="og:locale" content="de_DE">
+    
+    <!-- NEU: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AppAnwendung | Web-Anwendungen">
+    <meta name="twitter:description" content="Digitale Lösungen für professionelle Branchen - jetzt entdecken!">
+    
+    <!-- NEU: Canonical URL -->
+    <link rel="canonical" href="https://appanwendung.de">
+    
+    <!-- NEU: Preconnect zu externen Resources für Performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <title>AppAnwendung | Web-Anwendungen für Steuerberater, Logopädie, Immobilien & Handwerk</title>
+    
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    
+    <!-- NEU: Favicons für Branding -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='bold' fill='%236366f1'>A</text></svg>">
+    
+    <!-- NEU: Theme Color -->
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- NEU: JSON-LD Structured Data für Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AppAnwendung",
+        "url": "https://appanwendung.de",
+        "logo": "https://appanwendung.de/logo.svg",
+        "description": "Digitale Lösungen für Ihr Unternehmen - Maßgeschneiderte Web-Anwendungen für professionelle Branchen",
+        "sameAs": [
+            "https://www.facebook.com/appanwendung",
+            "https://www.linkedin.com/company/appanwendung"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "email": "info@appanwendung.de",
+            "telephone": "+49-123-456-78"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Germany"
+        }
+    }
+    </script>
+    
+    <!-- NEU: Schema für LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "AppAnwendung",
+        "image": "https://appanwendung.de/logo.svg",
+        "description": "Softwareentwicklung für professionelle Web-Anwendungen",
+        "url": "https://appanwendung.de",
+        "telephone": "+49-123-456-78",
+        "email": "info@appanwendung.de",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "DE",
+            "addressRegion": "Germany"
+        }
+    }
+    </script>
+    
+    <!-- NEU: PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- NEU: Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%236366f1' width='180' height='180'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' font-size='120' font-weight='bold' fill='white' font-family='Arial'>A</text></svg>">
+    
+    <!-- NEU: Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Start",
+                "item": "https://appanwendung.de#hero"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Portfolio",
+                "item": "https://appanwendung.de#portfolio"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Branchen",
+                "item": "https://appanwendung.de#branchen"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Kontakt",
+                "item": "https://appanwendung.de#kontakt"
+            }
+        ]
+    }
+    </script>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -34,9 +151,10 @@
         <div class="hero-bg"></div>
         <div class="hero-content">
             <div class="hero-badge animate-fade-in">
-                <i class="fas fa-rocket"></i>
+                <i class="fas fa-rocket" aria-hidden="true"></i>
                 <span>Digitale Transformation leicht gemacht</span>
             </div>
+            <!-- NEU: H1 für SEO - einmaliger Haupttitel -->
             <h1 class="hero-title animate-fade-in-up">
                 Maßgeschneiderte <span class="gradient-text">Web-Anwendungen</span> für Ihr Business
             </h1>
@@ -44,12 +162,12 @@
                 Wir entwickeln moderne, intuitive Softwarelösungen – speziell zugeschnitten auf die Anforderungen Ihrer Branche. Effizient. Sicher. Zukunftsfähig.
             </p>
             <div class="hero-buttons animate-fade-in-up">
-                <a href="#portfolio" class="btn btn-primary">
+                <a href="#portfolio" class="btn btn-primary" aria-label="Zum Portfolio navigieren">
                     <span>Portfolio entdecken</span>
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
                 </a>
-                <a href="#kontakt" class="btn btn-secondary">
-                    <i class="fas fa-calendar-check"></i>
+                <a href="#kontakt" class="btn btn-secondary" aria-label="Beratung anfordern">
+                    <i class="fas fa-calendar-check" aria-hidden="true"></i>
                     <span>Beratung anfragen</span>
                 </a>
             </div>
@@ -58,13 +176,13 @@
                     <span class="stat-number" data-count="15">0</span>
                     <span class="stat-label">Branchenlösungen</span>
                 </div>
-                <div class="stat-divider"></div>
+                <div class="stat-divider" aria-hidden="true"></div>
                 <div class="stat-item">
                     <span class="stat-number" data-count="100">0</span>
                     <span class="stat-suffix">%</span>
                     <span class="stat-label">Webbasiert</span>
                 </div>
-                <div class="stat-divider"></div>
+                <div class="stat-divider" aria-hidden="true"></div>
                 <div class="stat-item">
                     <span class="stat-number" data-count="24">0</span>
                     <span class="stat-suffix">/7</span>
@@ -74,7 +192,7 @@
         </div>
         <div class="hero-scroll">
             <a href="#portfolio" aria-label="Nach unten scrollen">
-                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
             </a>
         </div>
     </section>
@@ -387,7 +505,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span>E-Mail</span>
-                                <a href="mailto:info@appanwendung.de">info@appanwendung.de</a>
+                                <a href="/cdn-cgi/l/email-protection#6a03040c052a0b1a1a0b041d0f040e1f040d440e0f"><span class="__cf_email__" data-cfemail="f891969e97b899888899968f9d969c8d969fd69c9d">[email&#160;protected]</span></a>
                             </div>
                         </div>
                         <div class="kontakt-item">
@@ -406,18 +524,19 @@
                         </div>
                     </div>
                 </div>
-                <form class="kontakt-form" id="kontaktForm">
+                <form class="kontakt-form" id="kontaktForm" name="kontaktForm" method="POST">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
+                        <label for="name">Name <span aria-label="erforderlich">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name" aria-required="true">
                     </div>
                     <div class="form-group">
-                        <label for="email">E-Mail</label>
-                        <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                        <label for="email">E-Mail <span aria-label="erforderlich">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="ihre@email.de" aria-required="true" aria-describedby="email-hint">
+                        <small id="email-hint" style="display:none;">Gültige E-Mail Adresse erforderlich</small>
                     </div>
                     <div class="form-group">
                         <label for="branche">Branche</label>
-                        <select id="branche" name="branche">
+                        <select id="branche" name="branche" aria-label="Wählen Sie Ihre Branche">
                             <option value="">Bitte wählen...</option>
                             <option value="steuerberatung">Steuerberatung</option>
                             <option value="logopaedie">Logopädie</option>
@@ -428,12 +547,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="nachricht">Nachricht</label>
-                        <textarea id="nachricht" name="nachricht" rows="4" placeholder="Erzählen Sie uns von Ihrem Projekt..."></textarea>
+                        <label for="nachricht">Nachricht <span aria-label="erforderlich">*</span></label>
+                        <textarea id="nachricht" name="nachricht" rows="4" placeholder="Erzählen Sie uns von Ihrem Projekt..." aria-required="true"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">
+                    <button type="submit" class="btn btn-primary btn-full" aria-label="Nachricht senden">
                         <span>Nachricht senden</span>
-                        <i class="fas fa-paper-plane"></i>
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
                     </button>
                 </form>
             </div>
@@ -971,11 +1090,4 @@
     </button>
 
     <!-- Scripts -->
-    <script src="main.js"></script>
-    <script src="portfolio.js"></script>
-    <script src="modals.js"></script>
-    <script src="demos.js"></script>
-    <script src="animations.js"></script>
-    <script src="formvalidation.js"></script>
-</body>
-</html>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script

@@ -1,0 +1,92 @@
+# NEU: .htaccess für SEO und Performance Optimierung
+# Dieser Code sollte auf GitHub Pages nicht funktionieren
+# Aber auf regulären Hosting-Servern (wie Ionos) funktioniert es
+
+# ===== COMPRESSION =====
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/x-font application/x-font-truetype application/x-font-ttf application/x-font-otf application/x-font-opentype
+</IfModule>
+
+# ===== CACHING =====
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # HTML - don't cache
+    ExpiresByType text/html "now"
+    
+    # CSS, JavaScript, Images
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # Fonts
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    
+    # Default
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# ===== GZIP COMPRESSION =====
+<IfModule mod_gzip.c>
+    mod_gzip_on Yes
+    mod_gzip_dechunk Yes
+    mod_gzip_item_include file .(html|txt|css|js|json|xml)$
+    mod_gzip_item_include handler ^cgi-script$
+    mod_gzip_item_exclude mime ^image/
+    mod_gzip_minimum_file_size 1000
+</IfModule>
+
+# ===== HTTPS REDIRECT =====
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirect HTTP to HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # Redirect www to non-www
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [L,R=301]
+    
+    # Remove trailing slash
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+</IfModule>
+
+# ===== SECURITY =====
+# Disable directory listing
+Options -Indexes
+
+# Prevent access to sensitive files
+<FilesMatch "^\.(htaccess|htpasswd|env)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+</FilesMatch>
+
+# ===== CONTENT SECURITY HEADERS =====
+<IfModule mod_headers.c>
+    # X-UA-Compatible
+    Header set X-UA-Compatible "IE=edge"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ===== MIME TYPES =====
+<IfModule mod_mime.c>
+    AddType application/json json
+    AddType application/ld+json jsonld
+    AddEncoding gzip svgz
+    AddType image/svg+xml svg
+</IfModule>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NEU: XML Sitemap für Suchmaschinen -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
+    
+    <!-- Hauptseite -->
+    <url>
+        <loc>https://appanwendung.de</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Hero Section -->
+    <url>
+        <loc>https://appanwendung.de#hero</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Portfolio Section -->
+    <url>
+        <loc>https://appanwendung.de#portfolio</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Branchen Section -->
+    <url>
+        <loc>https://appanwendung.de#branchen</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    
+    <!-- Features Section -->
+    <url>
+        <loc>https://appanwendung.de#features</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Kontakt Section -->
+    <url>
+        <loc>https://appanwendung.de#kontakt</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    
+    <!-- Branchenlösungen einzeln -->
+    <url>
+        <loc>https://appanwendung.de#branchen</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <!-- Steuerberater -->
+    </url>
+    <url>
+        <loc>https://appanwendung.de#branchen</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <!-- Logopädie -->
+    </url>
+    <url>
+        <loc>https://appanwendung.de#branchen</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <!-- Immobilien -->
+    </url>
+    <url>
+        <loc>https://appanwendung.de#branchen</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <!-- Handwerk -->
+    </url>
+    <url>
+        <loc>https://appanwendung.de#branchen</loc>
+        <lastmod>2025-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <!-- Gartenbau -->
+    </url>
+
+</urlset>

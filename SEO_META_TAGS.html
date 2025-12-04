@@ -1,0 +1,103 @@
+<!-- NEU: Zusätzliche SEO Meta-Tags für index.html HEAD -->
+<!-- Diese Tags sollten im <head> zusätzlich eingefügt werden -->
+
+<!-- PWA Support -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%236366f1' width='180' height='180'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' font-size='120' font-weight='bold' fill='white' font-family='Arial'>A</text></svg>">
+
+<!-- Google Site Verification (später mit echtem Code ersetzen) -->
+<!-- <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE"> -->
+
+<!-- Bing Webmaster Tools Verification (später mit echtem Code ersetzen) -->
+<!-- <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE"> -->
+
+<!-- Preload kritische Ressourcen -->
+<link rel="preload" href="styles.css" as="style">
+<link rel="preload" href="main.js" as="script">
+
+<!-- Prefetch zukünftige Ressourcen -->
+<link rel="prefetch" href="portfolio.js">
+<link rel="prefetch" href="modals.js">
+
+<!-- DNS Prefetch für externe Domains -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
+<!-- Pagespeed Insights Optimierungen -->
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<link rel="alternate" hreflang="de" href="https://appanwendung.de">
+
+<!-- Article Schema (für Artikel/Blog-Seiten später) -->
+<!-- Wenn Sie später einen Blog hinzufügen, verwenden Sie:
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Artikel-Titel",
+  "image": "https://appanwendung.de/image.jpg",
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "author": {
+    "@type": "Organization",
+    "name": "AppAnwendung",
+    "url": "https://appanwendung.de"
+  }
+}
+</script>
+-->
+
+<!-- Breadcrumb Schema (für bessere Navigation in Suchergebnissen) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start",
+      "item": "https://appanwendung.de#hero"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Portfolio",
+      "item": "https://appanwendung.de#portfolio"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Branchen",
+      "item": "https://appanwendung.de#branchen"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Kontakt",
+      "item": "https://appanwendung.de#kontakt"
+    }
+  ]
+}
+</script>
+
+<!-- FAQPage Schema (für Häufig gestellte Fragen) -->
+<!-- Später verwenden für FAQ-Sektion:
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Welche Branchen unterstützen Sie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wir unterstützen Steuerberater, Logopäden, Immobilienverwaltungen, Handwerk und Gartenbau..."
+      }
+    }
+  ]
+}
+</script>
+-->

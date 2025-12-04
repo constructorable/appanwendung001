@@ -1,0 +1,23 @@
+# NEU: robots.txt für Suchmaschinen-Crawler
+# Alle Suchmaschinen-Bots zulassen
+User-agent: *
+Allow: /
+Disallow: 
+
+# Sitemap
+Sitemap: https://appanwendung.de/sitemap.xml
+
+# Besondere Regeln für Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Besondere Regeln für Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Besondere Regeln für Yandex
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 0
