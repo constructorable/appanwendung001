@@ -1,1093 +1,555 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <!-- NEU: Essential Meta Tags für SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Digitale Lösungen für Ihr Unternehmen - Maßgeschneiderte Web-Anwendungen für Steuerberater, Logopäden, Immobilienverwaltungen, Handwerk & Gartenbau in Deutschland.">
-    <meta name="keywords" content="Web-Anwendungen, Software-Lösungen, Steuerberater Software, Logopädie Management, Immobilienverwaltung, Handwerkssoftware, Gartenbau Management, digitale Lösungen, Cloud-basiert, DSGVO">
+    <meta name="description" content="Digitale Lösungen für Immobilienfirmen, therapeutische Praxen, Handwerker und Steuerberater. Moderne Software für effiziente Verwaltung und Geschäftsprozesse.">
+    <meta name="keywords" content="digitale Lösungen, Immobilienverwaltung, Praxissoftware, Handwerkersoftware, Steuerbuchhaltung">
     <meta name="author" content="AppAnwendung">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    
-    <!-- NEU: Open Graph Tags für Social Media -->
-    <meta property="og:title" content="AppAnwendung | Maßgeschneiderte Web-Anwendungen für Ihr Business">
-    <meta property="og:description" content="Professionelle digitale Lösungen für Steuerberater, Therapeuten, Immobilien und Handwerk - Cloud-basiert, DSGVO-konform, zukunftssicher.">
+    <meta property="og:title" content="AppAnwendung - Digitale Lösungen für verschiedene Branchen">
+    <meta property="og:description" content="Moderne Software speziell entwickelt für Immobilienfirmen, therapeutische Praxen, Handwerker und Steuerberater.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://appanwendung.de">
-    <meta property="og:locale" content="de_DE">
+    <meta property="og:url" content="https://www.appanwendung.de">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a1a2e">
     
-    <!-- NEU: Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AppAnwendung | Web-Anwendungen">
-    <meta name="twitter:description" content="Digitale Lösungen für professionelle Branchen - jetzt entdecken!">
+    <title>AppAnwendung - Digitale Lösungen für Ihre Branche</title>
     
-    <!-- NEU: Canonical URL -->
-    <link rel="canonical" href="https://appanwendung.de">
-    
-    <!-- NEU: Preconnect zu externen Resources für Performance -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    
-    <title>AppAnwendung | Web-Anwendungen für Steuerberater, Logopädie, Immobilien & Handwerk</title>
-    
-    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="styles.css"></noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
-    
-    <!-- NEU: Favicons für Branding -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='bold' fill='%236366f1'>A</text></svg>">
-    
-    <!-- NEU: Theme Color -->
-    <meta name="theme-color" content="#6366f1">
-    
-    <!-- NEU: JSON-LD Structured Data für Google Rich Snippets -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "AppAnwendung",
-        "url": "https://appanwendung.de",
-        "logo": "https://appanwendung.de/logo.svg",
-        "description": "Digitale Lösungen für Ihr Unternehmen - Maßgeschneiderte Web-Anwendungen für professionelle Branchen",
-        "sameAs": [
-            "https://www.facebook.com/appanwendung",
-            "https://www.linkedin.com/company/appanwendung"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Customer Service",
-            "email": "info@appanwendung.de",
-            "telephone": "+49-123-456-78"
-        },
-        "areaServed": {
-            "@type": "Country",
-            "name": "Germany"
-        }
-    }
-    </script>
-    
-    <!-- NEU: Schema für LocalBusiness -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "AppAnwendung",
-        "image": "https://appanwendung.de/logo.svg",
-        "description": "Softwareentwicklung für professionelle Web-Anwendungen",
-        "url": "https://appanwendung.de",
-        "telephone": "+49-123-456-78",
-        "email": "info@appanwendung.de",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "DE",
-            "addressRegion": "Germany"
-        }
-    }
-    </script>
-    
-    <!-- NEU: PWA Manifest -->
-    <link rel="manifest" href="/manifest.json">
-    
-    <!-- NEU: Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%236366f1' width='180' height='180'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' font-size='120' font-weight='bold' fill='white' font-family='Arial'>A</text></svg>">
-    
-    <!-- NEU: Breadcrumb Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Start",
-                "item": "https://appanwendung.de#hero"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Portfolio",
-                "item": "https://appanwendung.de#portfolio"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Branchen",
-                "item": "https://appanwendung.de#branchen"
-            },
-            {
-                "@type": "ListItem",
-                "position": 4,
-                "name": "Kontakt",
-                "item": "https://appanwendung.de#kontakt"
-            }
-        ]
-    }
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <i class="fas fa-cubes"></i>
-                <span>AppAnwendung</span>
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
-                <span class="hamburger"></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
+            <div class="nav-logo">
+                <span>appanwendung.de</span>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#hero" class="nav-link">Start</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#branchen" class="nav-link">Branchen</a></li>
-                <li><a href="#features" class="nav-link">Vorteile</a></li>
-                <li><a href="#kontakt" class="nav-link nav-cta">Kontakt</a></li>
+                <li><a href="#lösungen" class="nav-link">Lösungen</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#kontakt" class="nav-link cta-btn">Kontakt</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-bg"></div>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
         <div class="hero-content">
-            <div class="hero-badge animate-fade-in">
-                <i class="fas fa-rocket" aria-hidden="true"></i>
-                <span>Digitale Transformation leicht gemacht</span>
-            </div>
-            <!-- NEU: H1 für SEO - einmaliger Haupttitel -->
-            <h1 class="hero-title animate-fade-in-up">
-                Maßgeschneiderte <span class="gradient-text">Web-Anwendungen</span> für Ihr Business
-            </h1>
-            <p class="hero-subtitle animate-fade-in-up">
-                Wir entwickeln moderne, intuitive Softwarelösungen – speziell zugeschnitten auf die Anforderungen Ihrer Branche. Effizient. Sicher. Zukunftsfähig.
-            </p>
-            <div class="hero-buttons animate-fade-in-up">
-                <a href="#portfolio" class="btn btn-primary" aria-label="Zum Portfolio navigieren">
-                    <span>Portfolio entdecken</span>
-                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            <h1 class="hero-title">Digitale Lösungen für Ihr Business</h1>
+            <p class="hero-subtitle">Speziell entwickelt für Immobilienfirmen, therapeutische Praxen, Handwerker und Steuerberater</p>
+            <div class="hero-cta">
+                <a href="#kontakt" class="btn btn-primary btn-cta">
+                    <span>Jetzt Kontakt aufnehmen</span>
+                    <i class="fas fa-arrow-right"></i>
                 </a>
-                <a href="#kontakt" class="btn btn-secondary" aria-label="Beratung anfordern">
-                    <i class="fas fa-calendar-check" aria-hidden="true"></i>
-                    <span>Beratung anfragen</span>
-                </a>
-            </div>
-            <div class="hero-stats animate-fade-in">
-                <div class="stat-item">
-                    <span class="stat-number" data-count="15">0</span>
-                    <span class="stat-label">Branchenlösungen</span>
-                </div>
-                <div class="stat-divider" aria-hidden="true"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="100">0</span>
-                    <span class="stat-suffix">%</span>
-                    <span class="stat-label">Webbasiert</span>
-                </div>
-                <div class="stat-divider" aria-hidden="true"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="24">0</span>
-                    <span class="stat-suffix">/7</span>
-                    <span class="stat-label">Verfügbar</span>
-                </div>
+                <a href="#lösungen" class="btn btn-secondary">Lösungen ansehen</a>
             </div>
         </div>
-        <div class="hero-scroll">
-            <a href="#portfolio" aria-label="Nach unten scrollen">
-                <i class="fas fa-chevron-down" aria-hidden="true"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Portfolio</span>
-                <h2 class="section-title">Unsere <span class="gradient-text">digitalen Lösungen</span></h2>
-                <p class="section-subtitle">Klicken Sie auf eine Branche, um die Features live zu entdecken – mit interaktiven Demos und detaillierten Funktionsübersichten.</p>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <i class="fas fa-building"></i>
+                <span>Immobilien</span>
             </div>
-
-            <!-- Portfolio Filter -->
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="alle">
-                    <i class="fas fa-th"></i> Alle
-                </button>
-                <button class="filter-btn" data-filter="finanzen">
-                    <i class="fas fa-calculator"></i> Finanzen
-                </button>
-                <button class="filter-btn" data-filter="gesundheit">
-                    <i class="fas fa-heart"></i> Gesundheit
-                </button>
-                <button class="filter-btn" data-filter="immobilien">
-                    <i class="fas fa-building"></i> Immobilien
-                </button>
-                <button class="filter-btn" data-filter="handwerk">
-                    <i class="fas fa-hammer"></i> Handwerk
-                </button>
+            <div class="floating-card card-2">
+                <i class="fas fa-brain"></i>
+                <span>Therapie</span>
             </div>
-
-            <!-- Portfolio Grid -->
-            <div class="portfolio-grid" id="portfolioGrid">
-                <!-- Steuerberater -->
-                <article class="portfolio-card" data-category="finanzen" data-modal="steuberater">
-                    <div class="card-image">
-                        <div class="card-icon-bg">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                    </div>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h3>Steuerberater-Verwaltung</h3>
-                            <p>Mandantenverwaltung, Belegerfassung & Fristenkalender</p>
-                            <button class="btn btn-sm" data-modal="steuerberater">
-                                <span>Demo ansehen</span>
-                                <i class="fas fa-play"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Logopädie -->
-                <article class="portfolio-card" data-category="gesundheit" data-modal="logopaedie">
-                    <div class="card-image">
-                        <div class="card-icon-bg">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                    </div>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h3>Therapie-Praxis Management</h3>
-                            <p>Terminplanung, Dokumentation & Fortschrittsberichte</p>
-                            <button class="btn btn-sm" data-modal="logopaedie">
-                                <span>Demo ansehen</span>
-                                <i class="fas fa-play"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Immobilienverwaltung -->
-                <article class="portfolio-card" data-category="immobilien" data-modal="immobilien">
-                    <div class="card-image">
-                        <div class="card-icon-bg">
-                            <i class="fas fa-building"></i>
-                        </div>
-                    </div>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h3>Immobilien-Management</h3>
-                            <p>Objekt- & Mieterverwaltung, Nebenkostenabrechnung</p>
-                            <button class="btn btn-sm" data-modal="immobilien">
-                                <span>Demo ansehen</span>
-                                <i class="fas fa-play"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Schreinerei -->
-                <article class="portfolio-card" data-category="handwerk" data-modal="schreiner">
-                    <div class="card-image">
-                        <div class="card-icon-bg">
-                            <i class="fas fa-hammer"></i>
-                        </div>
-                    </div>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h3>Handwerks-Portal</h3>
-                            <p>Auftragsverwaltung, Materialkalkulation & Planung</p>
-                            <button class="btn btn-sm" data-modal="schreiner">
-                                <span>Demo ansehen</span>
-                                <i class="fas fa-play"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Gartenbau -->
-                <article class="portfolio-card" data-category="handwerk" data-modal="gartenbau">
-                    <div class="card-image">
-                        <div class="card-icon-bg">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                    </div>
-                    <div class="card-overlay">
-                        <div class="overlay-content">
-                            <h3>GaLaBau-Management</h3>
-                            <p>Tourenplanung, Pflegeverträge & Fotodokumentation</p>
-                            <button class="btn btn-sm" data-modal="gartenbau">
-                                <span>Demo ansehen</span>
-                                <i class="fas fa-play"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
+            <div class="floating-card card-3">
+                <i class="fas fa-hammer"></i>
+                <span>Handwerk</span>
+            </div>
+            <div class="floating-card card-4">
+                <i class="fas fa-calculator"></i>
+                <span>Steuern</span>
             </div>
         </div>
     </section>
 
-    <!-- Branchen Section -->
-    <section class="branchen" id="branchen">
+    <!-- LÖSUNGEN SECTION -->
+    <section id="lösungen" class="lösungen">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Branchen</span>
-                <h2 class="section-title">Für jede Branche die <span class="gradient-text">passende Lösung</span></h2>
-                <p class="section-subtitle">Spezialisierte Anwendungen, entwickelt von Experten die Ihre Branche verstehen.</p>
-            </div>
-            <div class="branchen-grid">
-                <!-- Steuerberater -->
-                <article class="branche-card" data-category="finanzen">
-                    <div class="card-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Steuerberater</h3>
-                        <p>Komplette Mandantenverwaltung mit automatisierten Prozessen.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Mandantenportal</li>
-                            <li><i class="fas fa-check"></i> Belegerfassung</li>
-                            <li><i class="fas fa-check"></i> Fristenkalender</li>
-                        </ul>
-                    </div>
-                    <a href="#kontakt" class="card-link">
-                        <span>Mehr erfahren</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
-
-                <!-- Logopäden -->
-                <article class="branche-card" data-category="gesundheit">
-                    <div class="card-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="card-content">
-                        <h3>Logopädie-Praxen</h3>
-                        <p>Therapieverwaltung mit professioneller Dokumentation.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Terminplanung</li>
-                            <li><i class="fas fa-check"></i> Therapiedokumentation</li>
-                            <li><i class="fas fa-check"></i> Fortschrittsberichte</li>
-                        </ul>
-                    </div>
-                    <a href="#kontakt" class="card-link">
-                        <span>Mehr erfahren</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
-
-                <!-- Immobilienverwaltung -->
-                <article class="branche-card" data-category="immobilien">
-                    <div class="card-icon">
+            <h2 class="section-title">Unsere Lösungen</h2>
+            <p class="section-subtitle">Maßgeschneidert für Ihre Branche</p>
+            
+            <div class="lösungen-grid">
+                <!-- IMMOBILIEN -->
+                <div class="lösung-card modal-trigger" data-modal="immobilien">
+                    <div class="lösung-icon immobilien">
                         <i class="fas fa-building"></i>
                     </div>
-                    <div class="card-content">
-                        <h3>Immobilienverwaltung</h3>
-                        <p>Effiziente Verwaltung von Objekten und Mietern.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Objektverwaltung</li>
-                            <li><i class="fas fa-check"></i> Mieterkommunikation</li>
-                            <li><i class="fas fa-check"></i> Nebenkostenabrechnung</li>
-                        </ul>
-                    </div>
-                    <a href="#kontakt" class="card-link">
-                        <span>Mehr erfahren</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
+                    <h3>Immobilienverwaltung</h3>
+                    <p>Effiziente Verwaltung von Objekten, Mietern und Abrechnungen</p>
+                    <ul class="lösung-features">
+                        <li><i class="fas fa-check"></i> Objektverwaltung</li>
+                        <li><i class="fas fa-check"></i> Mieterverwaltung</li>
+                        <li><i class="fas fa-check"></i> Automatische Abrechnung</li>
+                        <li><i class="fas fa-check"></i> Finanzübersicht</li>
+                    </ul>
+                </div>
 
-                <!-- Handwerk - Schreiner -->
-                <article class="branche-card" data-category="handwerk">
-                    <div class="card-icon">
+                <!-- THERAPIE -->
+                <div class="lösung-card modal-trigger" data-modal="therapie">
+                    <div class="lösung-icon therapie">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Praxisverwaltung</h3>
+                    <p>Termin- und Patientenverwaltung für therapeutische Praxen</p>
+                    <ul class="lösung-features">
+                        <li><i class="fas fa-check"></i> Terminplanung</li>
+                        <li><i class="fas fa-check"></i> Patientenakten</li>
+                        <li><i class="fas fa-check"></i> Abrechnungsmanagement</li>
+                        <li><i class="fas fa-check"></i> Dokumentation</li>
+                    </ul>
+                </div>
+
+                <!-- HANDWERK -->
+                <div class="lösung-card modal-trigger" data-modal="handwerk">
+                    <div class="lösung-icon handwerk">
                         <i class="fas fa-hammer"></i>
                     </div>
-                    <div class="card-content">
-                        <h3>Schreinereien</h3>
-                        <p>Projektmanagement für Handwerksbetriebe.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Angebotserstellung</li>
-                            <li><i class="fas fa-check"></i> Materialplanung</li>
-                            <li><i class="fas fa-check"></i> Zeiterfassung</li>
-                        </ul>
-                    </div>
-                    <a href="#kontakt" class="card-link">
-                        <span>Mehr erfahren</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
+                    <h3>Handwerksverwaltung</h3>
+                    <p>Projekte, Aufträge und Abläufe smart organisieren</p>
+                    <ul class="lösung-features">
+                        <li><i class="fas fa-check"></i> Auftragsverwaltung</li>
+                        <li><i class="fas fa-check"></i> Projektplanung</li>
+                        <li><i class="fas fa-check"></i> Zeiterfassung</li>
+                        <li><i class="fas fa-check"></i> Rechnungsstellung</li>
+                    </ul>
+                </div>
 
-                <!-- Gartenbau -->
-                <article class="branche-card" data-category="handwerk">
-                    <div class="card-icon">
-                        <i class="fas fa-leaf"></i>
+                <!-- STEUERN -->
+                <div class="lösung-card modal-trigger" data-modal="steuern">
+                    <div class="lösung-icon steuern">
+                        <i class="fas fa-calculator"></i>
                     </div>
-                    <div class="card-content">
-                        <h3>Garten- & Landschaftsbau</h3>
-                        <p>Einsatzplanung und Dokumentation für GaLaBau-Betriebe.</p>
-                        <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Tourenplanung</li>
-                            <li><i class="fas fa-check"></i> Pflegeverträge</li>
-                            <li><i class="fas fa-check"></i> Fotodokumentation</li>
-                        </ul>
-                    </div>
-                    <a href="#kontakt" class="card-link">
-                        <span>Mehr erfahren</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </article>
+                    <h3>Steuerbuchhaltung</h3>
+                    <p>Buchhaltung und Steuerverwaltung einfach gemacht</p>
+                    <ul class="lösung-features">
+                        <li><i class="fas fa-check"></i> Rechnungsverwaltung</li>
+                        <li><i class="fas fa-check"></i> Automatische Kategorisierung</li>
+                        <li><i class="fas fa-check"></i> Berichterstellung</li>
+                        <li><i class="fas fa-check"></i> Compliance-Tools</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
+    <!-- FEATURES SECTION -->
+    <section id="features" class="features">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Vorteile</span>
-                <h2 class="section-title">Warum unsere <span class="gradient-text">Lösungen überzeugen</span></h2>
-                <p class="section-subtitle">Modernste Technologie, kombiniert mit durchdachtem Design und maximaler Benutzerfreundlichkeit.</p>
-            </div>
+            <h2 class="section-title">Warum AppAnwendung?</h2>
+            <p class="section-subtitle">Features die begeistern</p>
+            
             <div class="features-grid">
-                <div class="feature-item reveal">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>100% Responsiv</h3>
-                    <p>Perfekte Darstellung auf Desktop, Tablet und Smartphone – überall produktiv arbeiten.</p>
-                </div>
-                <div class="feature-item reveal">
-                    <div class="feature-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Cloud-basiert</h3>
-                    <p>Keine Installation nötig. Zugriff von überall – nur ein Browser wird benötigt.</p>
-                </div>
-                <div class="feature-item reveal">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>DSGVO-konform</h3>
-                    <p>Hosting in Deutschland. Ihre Daten bleiben sicher und erfüllen alle Datenschutz-Anforderungen.</p>
-                </div>
-                <div class="feature-item reveal">
+                <div class="feature-item modal-trigger" data-modal="blitzschnell">
                     <div class="feature-icon">
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Blitzschnell</h3>
-                    <p>Optimierte Performance für reibungsloses Arbeiten – auch bei großen Datenmengen.</p>
+                    <p>Optimiert für maximale Performance – auch bei großen Datenmengen</p>
                 </div>
-                <div class="feature-item reveal">
+                <div class="feature-item modal-trigger" data-modal="sicher">
                     <div class="feature-icon">
-                        <i class="fas fa-puzzle-piece"></i>
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Modular erweiterbar</h3>
-                    <p>Starten Sie klein und erweitern Sie Ihre Lösung flexibel nach Bedarf.</p>
+                    <h3>Sicher</h3>
+                    <p>Höchste Sicherheitsstandards und Datenschutz nach DSGVO</p>
                 </div>
-                <div class="feature-item reveal">
+                <div class="feature-item modal-trigger" data-modal="responsive">
                     <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Persönlicher Support</h3>
-                    <p>Direkter Draht zu echten Experten – schnelle Hilfe bei allen Fragen.</p>
+                    <h3>Responsive</h3>
+                    <p>Perfekt auf Desktop, Tablet und Smartphone</p>
+                </div>
+                <div class="feature-item modal-trigger" data-modal="live-sync">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>Live-Sync</h3>
+                    <p>Echtzeit-Synchronisierung zwischen allen Geräten</p>
+                </div>
+                <div class="feature-item modal-trigger" data-modal="pdf-export">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>PDF-Export</h3>
+                    <p>Intelligente Exportfunktion für Reports und Dokumente</p>
+                </div>
+                <div class="feature-item modal-trigger" data-modal="massggeschneidert">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Maßgeschneidert</h3>
+                    <p>Perfekt auf Ihre Bedürfnisse angepasst</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Kontakt Section -->
-    <section class="kontakt" id="kontakt">
+
+
+    <!-- KONTAKT SECTION -->
+    <section id="kontakt" class="kontakt">
         <div class="container">
+            <h2 class="section-title">Kontaktieren Sie uns</h2>
+            <p class="section-subtitle">Wir freuen uns auf Ihre Anfrage</p>
+            
             <div class="kontakt-wrapper">
-                <div class="kontakt-info">
-                    <span class="section-tag">Kontakt</span>
-                    <h2 class="section-title">Lassen Sie uns <span class="gradient-text">sprechen</span></h2>
-                    <p>Bereit für den nächsten Schritt? Wir freuen uns auf Ihre Anfrage und beraten Sie gerne unverbindlich.</p>
-                    <div class="kontakt-details">
-                        <div class="kontakt-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <span>E-Mail</span>
-                                <a href="/cdn-cgi/l/email-protection#6a03040c052a0b1a1a0b041d0f040e1f040d440e0f"><span class="__cf_email__" data-cfemail="f891969e97b899888899968f9d969c8d969fd69c9d">[email&#160;protected]</span></a>
-                            </div>
-                        </div>
-                        <div class="kontakt-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <span>Telefon</span>
-                                <a href="tel:+4912345678">+49 123 456 78</a>
-                            </div>
-                        </div>
-                        <div class="kontakt-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <span>Standort</span>
-                                <p>Deutschland</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <form class="kontakt-form" id="kontaktForm" name="kontaktForm" method="POST">
+                <form class="kontakt-form" id="kontaktForm">
                     <div class="form-group">
-                        <label for="name">Name <span aria-label="erforderlich">*</span></label>
-                        <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name" aria-required="true">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Ihr Name">
+                        <span class="error-message"></span>
                     </div>
                     <div class="form-group">
-                        <label for="email">E-Mail <span aria-label="erforderlich">*</span></label>
-                        <input type="email" id="email" name="email" required placeholder="ihre@email.de" aria-required="true" aria-describedby="email-hint">
-                        <small id="email-hint" style="display:none;">Gültige E-Mail Adresse erforderlich</small>
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon">Telefon</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="+49 (0) ...">
+                        <span class="error-message"></span>
                     </div>
                     <div class="form-group">
                         <label for="branche">Branche</label>
-                        <select id="branche" name="branche" aria-label="Wählen Sie Ihre Branche">
-                            <option value="">Bitte wählen...</option>
-                            <option value="steuerberatung">Steuerberatung</option>
-                            <option value="logopaedie">Logopädie</option>
+                        <select id="branche" name="branche" required>
+                            <option value="">-- Bitte wählen --</option>
                             <option value="immobilien">Immobilienverwaltung</option>
-                            <option value="handwerk">Handwerk</option>
-                            <option value="gartenbau">Garten- & Landschaftsbau</option>
-                            <option value="andere">Andere Branche</option>
+                            <option value="therapie">Therapeutische Praxis</option>
+                            <option value="handwerk">Handwerksbetrieb</option>
+                            <option value="steuern">Steuerberatung</option>
+                            <option value="sonstiges">Sonstiges</option>
                         </select>
+                        <span class="error-message"></span>
                     </div>
                     <div class="form-group">
-                        <label for="nachricht">Nachricht <span aria-label="erforderlich">*</span></label>
-                        <textarea id="nachricht" name="nachricht" rows="4" placeholder="Erzählen Sie uns von Ihrem Projekt..." aria-required="true"></textarea>
+                        <label for="nachricht">Nachricht</label>
+                        <textarea id="nachricht" name="nachricht" rows="5" required placeholder="Ihre Nachricht..."></textarea>
+                        <span class="error-message"></span>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full" aria-label="Nachricht senden">
-                        <span>Nachricht senden</span>
-                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
-                    </button>
+                    <button type="submit" class="btn btn-primary btn-large">Nachricht senden</button>
+                    <div class="form-feedback"></div>
                 </form>
+
+                <div class="kontakt-info">
+                    <h3>Direkter Kontakt</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>E-Mail</p>
+                            <a href="mailto:kontakt@appanwendung.de">kontakt@appanwendung.de</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Adresse</p>
+                            <p>Musterstraße 123<br>12345 Musterstadt</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FEATURE MODALS -->
+    <div class="feature-modal modal-blitzschnell" data-modal="blitzschnell">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-bolt"></i></div>
+                <h2>Blitzschnelle Performance</h2>
+            </div>
+            <div class="modal-body">
+                <p>Schnelligkeit ist Produktivität. Optimiert für maximale Performance – selbst bei tausenden von Datensätzen arbeitet Ihre Software flüssig und responsiv.</p>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <i class="fas fa-gauge-high"></i>
+                        <div><h4>Hochoptimiert</h4><p>Jede Funktion ist für maximale Geschwindigkeit optimiert</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-database"></i>
+                        <div><h4>Big Data Ready</h4><p>Auch bei Millionen von Datensätzen bleibt die Software schnell</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-zap"></i>
+                        <div><h4>Instant Loading</h4><p>Keine Ladezeiten – alles lädt sofort</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-modal modal-sicher" data-modal="sicher">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-shield-alt"></i></div>
+                <h2>Sicherheit auf höchstem Niveau</h2>
+            </div>
+            <div class="modal-body">
+                <p>Ihre Daten sind wertvoll – und Sicherheit ist nicht verhandelbar. Höchste Standards und DSGVO-Compliance sind selbstverständlich.</p>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <i class="fas fa-lock"></i>
+                        <div><h4>Verschlüsslung</h4><p>End-to-End Verschlüsslung für maximale Datensicherheit</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-gavel"></i>
+                        <div><h4>DSGVO-Konform</h4><p>Vollständige Compliance mit europäischen Datenschutzrichtlinien</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-server"></i>
+                        <div><h4>Sichere Server</h4><p>Redundante Backups in Deutschland</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-modal modal-responsive" data-modal="responsive">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h2>Responsive auf allen Geräten</h2>
+            </div>
+            <div class="modal-body">
+                <p>Ob am Schreibtisch, unterwegs oder auf dem Smartphone – Ihre Software funktioniert überall perfekt.</p>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <i class="fas fa-desktop"></i>
+                        <div><h4>Desktop-Optimiert</h4><p>Volle Funktionalität auf großen Bildschirmen</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-tablet-alt"></i>
+                        <div><h4>Tablet-Freundlich</h4><p>Perfekt im Hochformat und Querformat</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-mobile"></i>
+                        <div><h4>Mobile-First</h4><p>Optimiert für Touch-Bedienung auf Smartphones</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-modal modal-live-sync" data-modal="live-sync">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-sync"></i></div>
+                <h2>Live-Synchronisierung</h2>
+            </div>
+            <div class="modal-body">
+                <p>Alle Ihre Daten sind immer aktuell – auf allen Geräten. Jeder im Team hat denselben Informationsstand.</p>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <i class="fas fa-cloud"></i>
+                        <div><h4>Cloud-Basiert</h4><p>Daten sicher in der Cloud gespeichert</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-users"></i>
+                        <div><h4>Team-Collaboration</h4><p>Mehrere Nutzer arbeiten gleichzeitig</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-history"></i>
+                        <div><h4>Änderungsverlauf</h4><p>Nachverfolgung aller Änderungen</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-modal modal-pdf-export" data-modal="pdf-export">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-file-pdf"></i></div>
+                <h2>Intelligenter PDF-Export</h2>
+            </div>
+            <div class="modal-body">
+                <p>Exportieren Sie Ihre Daten in professionell formatierte PDFs – mit einem Klick. Perfekt für Berichte und Dokumentation.</p>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <i class="fas fa-print"></i>
+                        <div><h4>Druck-Ready</h4><p>Perfekt formatierte PDFs für sofortigen Druck</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-chart-bar"></i>
+                        <div><h4>Mit Diagrammen</h4><p>Daten werden visuell ansprechend dargestellt</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-filter"></i>
+                        <div><h4>Intelligente Filter</h4><p>Exportieren Sie nur die Daten, die Sie brauchen</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-modal modal-massggeschneidert" data-modal="massggeschneidert">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-cogs"></i></div>
+                <h2>Maßgeschneidert für Ihre Branche</h2>
+            </div>
+            <div class="modal-body">
+                <p>Jedes Unternehmen ist unterschiedlich – Ihre Software sollte es auch sein. Nicht generisch, sondern perfekt angepasst.</p>
+                <div class="modal-features">
+                    <div class="modal-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div><h4>100% Branchenspezifisch</h4><p>Für Immobilienverwaltung, Therapiepraxen, Handwerker & Steuerberater</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-sliders-h"></i>
+                        <div><h4>Flexible Anpassung</h4><p>Neue Features auf Wunsch – schnell implementiert</p></div>
+                    </div>
+                    <div class="modal-feature">
+                        <i class="fas fa-handshake"></i>
+                        <div><h4>Partnerschaftlich</h4><p>Ihre Prozesse sind zentral, nicht die Software</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <!-- BRANCHE-SPEZIFISCHE MODALS -->
+    
+    <!-- IMMOBILIEN MODAL -->
+    <div class="solution-modal modal-immobilien" data-modal="immobilien">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header immobilien-gradient">
+                <div class="modal-icon"><i class="fas fa-building"></i></div>
+                <h2>Immobilienverwaltung – Ihre digitale Lösung</h2>
+            </div>
+            <div class="modal-body">
+                <p class="intro-text">Verwaltung von Immobilien wird durch intelligente Software um über 50% effizienter. Weniger administrative Last, mehr Fokus auf Ihre Kunden.</p>
+                <div class="modal-showcase">
+                    <div class="showcase-item"><i class="fas fa-file-contract"></i><h4>Verträge & Dokumente</h4><p>Alle Mietverträge, Betriebskostenabrechnungen und Dokumente zentral gespeichert und schnell zugänglich</p></div>
+                    <div class="showcase-item"><i class="fas fa-users"></i><h4>Mieterportal</h4><p>Mieter können eigenständig Mietgesuche einreichen, Anfragen stellen – Sie sparen Zeit</p></div>
+                    <div class="showcase-item"><i class="fas fa-chart-line"></i><h4>Finanzanalyse</h4><p>Echtzeit-Übersicht über Einnahmen, Ausgaben, Nebenkosten und Rentabilität</p></div>
+                    <div class="showcase-item"><i class="fas fa-cog"></i><h4>Automatisierung</h4><p>Mahnungen, Rechnungen & Abrechnungen laufen automatisiert ab</p></div>
+                </div>
+                <div class="modal-cta"><a href="#kontakt" class="btn btn-primary">Jetzt Demo vereinbaren</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THERAPIE MODAL -->
+    <div class="solution-modal modal-therapie" data-modal="therapie">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header therapie-gradient">
+                <div class="modal-icon"><i class="fas fa-brain"></i></div>
+                <h2>Praxisverwaltung – Fokus auf Patienten</h2>
+            </div>
+            <div class="modal-body">
+                <p class="intro-text">Therapiepraxen brauchen spezielle Software. Terminplanung, Patientenakten & Abrechnungen in einem System – DSGVO-konform und sicher.</p>
+                <div class="modal-showcase">
+                    <div class="showcase-item"><i class="fas fa-calendar-check"></i><h4>Intelligente Terminplanung</h4><p>Automatische Terminvergabe, Erinnerungen, Pufferzeit zwischen Patienten</p></div>
+                    <div class="showcase-item"><i class="fas fa-lock"></i><h4>Patientenakten sicher</h4><p>Verschlüsselte Patientendaten mit Zugriffskontrolle – vollständig DSGVO-konform</p></div>
+                    <div class="showcase-item"><i class="fas fa-money-bill"></i><h4>Abrechnungsautomatik</h4><p>Automatische Abrechnung mit Krankenkassen, Privatversicherten & Kostenträgern</p></div>
+                    <div class="showcase-item"><i class="fas fa-mobile-alt"></i><h4>Patienten-App</h4><p>Patienten können Termine online buchen und verschieben – selbstständig</p></div>
+                </div>
+                <div class="modal-cta"><a href="#kontakt" class="btn btn-primary">Kostenlose Beratung</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HANDWERK MODAL -->
+    <div class="solution-modal modal-handwerk" data-modal="handwerk">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header handwerk-gradient">
+                <div class="modal-icon"><i class="fas fa-hammer"></i></div>
+                <h2>Handwerksverwaltung – Projekte unter Kontrolle</h2>
+            </div>
+            <div class="modal-body">
+                <p class="intro-text">Handwerksbetriebe jonglieren mit vielen Baustellen. Software, die den Überblick behält: Aufträge, Zeiten, Kosten, Abrechnung – alles im Griff.</p>
+                <div class="modal-showcase">
+                    <div class="showcase-item"><i class="fas fa-tasks"></i><h4>Auftragsverwaltung</h4><p>Alle Aufträge übersichtlich, mit Status-Verfolgung, Termine & Prioritäten</p></div>
+                    <div class="showcase-item"><i class="fas fa-clock"></i><h4>Zeiterfassung mobil</h4><p>Mitarbeiter erfassen Zeiten direkt auf der Baustelle – per Smartphone oder Tablet</p></div>
+                    <div class="showcase-item"><i class="fas fa-tools"></i><h4>Material & Kosten</h4><p>Materialverbrauch pro Projekt tracken, Kostenprognosen aktuell halten</p></div>
+                    <div class="showcase-item"><i class="fas fa-file-invoice"></i><h4>Rechnungen im Handumdrehen</h4><p>Aus Aufträgen entstehen automatisch professionelle Rechnungen</p></div>
+                </div>
+                <div class="modal-cta"><a href="#kontakt" class="btn btn-primary">Zur kostenlosen Demo</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEUERN MODAL -->
+    <div class="solution-modal modal-steuern" data-modal="steuern">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <div class="modal-header steuern-gradient">
+                <div class="modal-icon"><i class="fas fa-calculator"></i></div>
+                <h2>Steuerbuchhaltung – Komplexität vereinfacht</h2>
+            </div>
+            <div class="modal-body">
+                <p class="intro-text">Buchhaltung und Steuerverwaltung erfordert Genauigkeit. Unsere Software macht es einfach: automatisiert, sicher und immer aktuell nach neuesten Vorschriften.</p>
+                <div class="modal-showcase">
+                    <div class="showcase-item"><i class="fas fa-receipt"></i><h4>Automatische Kategorisierung</h4><p>Belege werden intelligent erfasst und den richtigen Kategorien zugeordnet</p></div>
+                    <div class="showcase-item"><i class="fas fa-balance-scale"></i><h4>DATEV-Export</h4><p>Direkte Integration mit DATEV – Steuererklärung wird zum Kinderspiel</p></div>
+                    <div class="showcase-item"><i class="fas fa-chart-pie"></i><h4>Reports & Analysen</h4><p>Übersichtliche Auswertungen für Gewinn- & Verlustrechnung, Bilanz etc.</p></div>
+                    <div class="showcase-item"><i class="fas fa-shield-check"></i><h4>Compliance aktuell</h4><p>Immer konform mit aktuellen Steuergesetzen und Richtlinien</p></div>
+                </div>
+                <div class="modal-cta"><a href="#kontakt" class="btn btn-primary">Termin mit Experte</a></div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#hero" class="footer-logo">
-                        <i class="fas fa-cubes"></i>
-                        <span>AppAnwendung</span>
-                    </a>
-                    <p>Digitale Lösungen für Ihren Erfolg. Modern. Effizient. Maßgeschneidert.</p>
+                <div class="footer-section">
+                    <h4>appanwendung.de</h4>
+                    <p>Digitale Lösungen für verschiedene Branchen</p>
                 </div>
-                <div class="footer-links">
+                <div class="footer-section">
                     <h4>Navigation</h4>
                     <ul>
                         <li><a href="#hero">Start</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#branchen">Branchen</a></li>
+                        <li><a href="#lösungen">Lösungen</a></li>
+                        <li><a href="#features">Features</a></li>
                         <li><a href="#kontakt">Kontakt</a></li>
                     </ul>
                 </div>
-                <div class="footer-legal">
-                    <h4>Rechtliches</h4>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
                     <ul>
-                        <li><a href="#impressum">Impressum</a></li>
-                        <li><a href="#datenschutz">Datenschutz</a></li>
-                        <li><a href="#agb">AGB</a></li>
+                        <li><a href="mailto:kontakt@appanwendung.de">kontakt@appanwendung.de</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AppAnwendung. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2024 appanwendung.de | Entwickelt von Oliver Acker | Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Modals -->
-    <div class="modal-overlay" id="modalOverlay"></div>
-
-    <!-- Steuerberater Modal -->
-    <div class="modal" id="modal-steuerberater">
-        <div class="modal-content">
-            <button class="modal-close" data-close="modal-steuerberater">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-header">
-                <div class="modal-icon">
-                    <i class="fas fa-calculator"></i>
-                </div>
-                <h2>Steuerberater-Verwaltung</h2>
-            </div>
-            <div class="modal-tabs">
-                <button class="tab-btn active" data-tab="tab-stb-features">Features</button>
-                <button class="tab-btn" data-tab="tab-stb-demo">Live Demo</button>
-                <button class="tab-btn" data-tab="tab-stb-specs">Technisch</button>
-            </div>
-            <div class="modal-body">
-                <!-- Features Tab -->
-                <div class="tab-content active" id="tab-stb-features">
-                    <div class="features-list">
-                        <div class="feature-block">
-                            <i class="fas fa-users"></i>
-                            <h4>Mandantenverwaltung</h4>
-                            <p>Zentrale Verwaltung aller Mandanten mit Kontaktdaten, Steuernummern und wichtigen Dokumenten.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-receipt"></i>
-                            <h4>Belegerfassung</h4>
-                            <p>Automatische Belegverwaltung mit OCR-Erkennung und Kategorisierung.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-calendar-check"></i>
-                            <h4>Fristenkalender</h4>
-                            <p>Automatische Erinnerungen für Steuererklärungen, Abgabefristen und Termine.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-chart-line"></i>
-                            <h4>Reporting</h4>
-                            <p>Automatische Berichte und Statistiken für bessere Mandantenverwaltung.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Demo Tab -->
-                <div class="tab-content" id="tab-stb-demo">
-                    <div class="demo-container">
-                        <div class="demo-preview">
-                            <div class="demo-table">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Mandant</th>
-                                            <th>Steuernummer</th>
-                                            <th>Status</th>
-                                            <th>Aktion</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Müller GmbH</td>
-                                            <td>12 345 678</td>
-                                            <td><span class="status-badge active">Aktiv</span></td>
-                                            <td><button class="btn btn-xs">Bearbeiten</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Schmidt KG</td>
-                                            <td>87 654 321</td>
-                                            <td><span class="status-badge">Ausstehend</span></td>
-                                            <td><button class="btn btn-xs">Bearbeiten</button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <p class="demo-note"><i class="fas fa-info-circle"></i> Dies ist ein vereinfachter Demo-Ausschnitt der vollständigen Anwendung.</p>
-                    </div>
-                </div>
-
-                <!-- Technisch Tab -->
-                <div class="tab-content" id="tab-stb-specs">
-                    <div class="specs-grid">
-                        <div class="spec-item">
-                            <strong>Datenspeicherung:</strong>
-                            <p>Cloud-basiert mit automatischer Verschlüsselung</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Benutzer:</strong>
-                            <p>Bis zu 10 Benutzer pro Konto</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Sicherheit:</strong>
-                            <p>DSGVO-konform, deutsche Server</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Export:</strong>
-                            <p>PDF, Excel, CSV</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Logopädie Modal -->
-    <div class="modal" id="modal-logopaedie">
-        <div class="modal-content">
-            <button class="modal-close" data-close="modal-logopaedie">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-header">
-                <div class="modal-icon">
-                    <i class="fas fa-comments"></i>
-                </div>
-                <h2>Therapie-Praxis Management</h2>
-            </div>
-            <div class="modal-tabs">
-                <button class="tab-btn active" data-tab="tab-logo-features">Features</button>
-                <button class="tab-btn" data-tab="tab-logo-demo">Live Demo</button>
-                <button class="tab-btn" data-tab="tab-logo-specs">Technisch</button>
-            </div>
-            <div class="modal-body">
-                <!-- Features Tab -->
-                <div class="tab-content active" id="tab-logo-features">
-                    <div class="features-list">
-                        <div class="feature-block">
-                            <i class="fas fa-calendar"></i>
-                            <h4>Terminplanung</h4>
-                            <p>Intelligente Terminvergabe mit Patienten-Benachrichtigungen per SMS/E-Mail.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-file-medical"></i>
-                            <h4>Therapiedokumentation</h4>
-                            <p>Strukturierte Dokumentation nach Fachstandards mit Templates.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-chart-bar"></i>
-                            <h4>Fortschrittsberichte</h4>
-                            <p>Automatische Analyse und Visualisierung von Therapiefortschritten.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-video"></i>
-                            <h4>Telemedizin-Integration</h4>
-                            <p>Integrierte Video-Termine für Ferntherapien.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Demo Tab -->
-                <div class="tab-content" id="tab-logo-demo">
-                    <div class="demo-container">
-                        <div class="demo-calendar">
-                            <div class="calendar-header">Januar 2025</div>
-                            <div class="calendar-grid">
-                                <div class="calendar-day">Mo</div>
-                                <div class="calendar-day">Di</div>
-                                <div class="calendar-day">Mi</div>
-                                <div class="calendar-day">Do</div>
-                                <div class="calendar-day">Fr</div>
-                                <div class="calendar-slot available">6</div>
-                                <div class="calendar-slot available">7</div>
-                                <div class="calendar-slot booked">8</div>
-                                <div class="calendar-slot available">9</div>
-                                <div class="calendar-slot available">10</div>
-                            </div>
-                        </div>
-                        <div class="appointment-info">
-                            <h4>Nächster Termin</h4>
-                            <p><strong>Patient:</strong> Anna Schmidt</p>
-                            <p><strong>Datum:</strong> 08.01.2025, 10:30</p>
-                            <p><strong>Diagnose:</strong> Sprachentwicklungsverzögerung</p>
-                        </div>
-                        <p class="demo-note"><i class="fas fa-info-circle"></i> Live-Terminkalender mit Echtzeit-Synchronisierung.</p>
-                    </div>
-                </div>
-
-                <!-- Technisch Tab -->
-                <div class="tab-content" id="tab-logo-specs">
-                    <div class="specs-grid">
-                        <div class="spec-item">
-                            <strong>Patienten:</strong>
-                            <p>Unbegrenzte Patientenverwaltung</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Termine:</strong>
-                            <p>Automatische Pufferzone zwischen Terminen</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Integration:</strong>
-                            <p>Kalender-Sync, Video-Conferencing</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Compliance:</strong>
-                            <p>Medizinische Datenschutz-Standards</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Immobilien Modal -->
-    <div class="modal" id="modal-immobilien">
-        <div class="modal-content">
-            <button class="modal-close" data-close="modal-immobilien">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-header">
-                <div class="modal-icon">
-                    <i class="fas fa-building"></i>
-                </div>
-                <h2>Immobilien-Management</h2>
-            </div>
-            <div class="modal-tabs">
-                <button class="tab-btn active" data-tab="tab-immo-features">Features</button>
-                <button class="tab-btn" data-tab="tab-immo-demo">Live Demo</button>
-                <button class="tab-btn" data-tab="tab-immo-specs">Technisch</button>
-            </div>
-            <div class="modal-body">
-                <!-- Features Tab -->
-                <div class="tab-content active" id="tab-immo-features">
-                    <div class="features-list">
-                        <div class="feature-block">
-                            <i class="fas fa-home"></i>
-                            <h4>Objektverwaltung</h4>
-                            <p>Zentrale Verwaltung aller Immobilien mit Fotos, Unterlagen und Historie.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-user-tie"></i>
-                            <h4>Mieterverwaltung</h4>
-                            <p>Vollständige Mieterdaten, Verträge und Zahlungshistorie im Überblick.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-receipt"></i>
-                            <h4>Nebenkostenabrechnung</h4>
-                            <p>Automatische Berechnung und Abrechnung von Nebenkosten pro Mieter.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-tool"></i>
-                            <h4>Instandhaltung</h4>
-                            <p>Dokumentation von Reparaturen und Wartungen mit automatischen Terminen.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Demo Tab -->
-                <div class="tab-content" id="tab-immo-demo">
-                    <div class="demo-container">
-                        <div class="property-overview">
-                            <div class="property-card">
-                                <div class="property-header">
-                                    <h4>Hochstraße 42, München</h4>
-                                    <span class="property-badge">4 Einheiten</span>
-                                </div>
-                                <div class="property-details">
-                                    <p><strong>Gesamtwert:</strong> €850.000</p>
-                                    <p><strong>Mieter:</strong> 4 aktiv</p>
-                                    <p><strong>Gesamtmieteinnahmen:</strong> €3.200/Monat</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="demo-note"><i class="fas fa-info-circle"></i> Dashboard mit allen Immobilien und Kennzahlen.</p>
-                    </div>
-                </div>
-
-                <!-- Technisch Tab -->
-                <div class="tab-content" id="tab-immo-specs">
-                    <div class="specs-grid">
-                        <div class="spec-item">
-                            <strong>Objekte:</strong>
-                            <p>Unbegrenzte Immobilien</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Mieter:</strong>
-                            <p>Vollständige Vertragsverwaltung</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Abrechnung:</strong>
-                            <p>Automatische Nebenkostenrechnung</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Berichte:</strong>
-                            <p>Vermieter-Abrechnungen und Steuererklärungen</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Schreiner Modal -->
-    <div class="modal" id="modal-schreiner">
-        <div class="modal-content">
-            <button class="modal-close" data-close="modal-schreiner">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-header">
-                <div class="modal-icon">
-                    <i class="fas fa-hammer"></i>
-                </div>
-                <h2>Handwerks-Portal für Schreinereien</h2>
-            </div>
-            <div class="modal-tabs">
-                <button class="tab-btn active" data-tab="tab-sch-features">Features</button>
-                <button class="tab-btn" data-tab="tab-sch-demo">Live Demo</button>
-                <button class="tab-btn" data-tab="tab-sch-specs">Technisch</button>
-            </div>
-            <div class="modal-body">
-                <!-- Features Tab -->
-                <div class="tab-content active" id="tab-sch-features">
-                    <div class="features-list">
-                        <div class="feature-block">
-                            <i class="fas fa-file-invoice"></i>
-                            <h4>Angebotserstellung</h4>
-                            <p>Schnelle Erstellung professioneller Angebote mit automatischen Kalkulationen.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-cubes"></i>
-                            <h4>Materialplanung</h4>
-                            <p>Automatische Materialbestellung basierend auf Auftragsdaten.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-clock"></i>
-                            <h4>Zeiterfassung</h4>
-                            <p>Mobile Zeiterfassung für Mitarbeiter vor Ort.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-chart-pie"></i>
-                            <h4>Rentabilitätsanalyse</h4>
-                            <p>Automatische Berechnung von Gewinnmargen pro Projekt.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Demo Tab -->
-                <div class="tab-content" id="tab-sch-demo">
-                    <div class="demo-container">
-                        <div class="project-timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-marker completed">✓</div>
-                                <div class="timeline-content">
-                                    <h4>Angebot erstellt</h4>
-                                    <p>15.01.2025 - Kundentermin Müller</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item active">
-                                <div class="timeline-marker">→</div>
-                                <div class="timeline-content">
-                                    <h4>Material bestellt</h4>
-                                    <p>20.01.2025 - Buche natur 50m²</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker">○</div>
-                                <div class="timeline-content">
-                                    <h4>Produktion</h4>
-                                    <p>Geplant: 22.01.2025</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="demo-note"><i class="fas fa-info-circle"></i> Projektmanagement mit Echtzeit-Status-Updates.</p>
-                    </div>
-                </div>
-
-                <!-- Technisch Tab -->
-                <div class="tab-content" id="tab-sch-specs">
-                    <div class="specs-grid">
-                        <div class="spec-item">
-                            <strong>Projekte:</strong>
-                            <p>Unbegrenzte Projekte mit Verlauf</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Mobile App:</strong>
-                            <p>Native iOS/Android App enthalten</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Integration:</strong>
-                            <p>Lagerverwaltung, Lieferanten</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Reports:</strong>
-                            <p>Profitabilität, Ressourcentools</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Gartenbau Modal -->
-    <div class="modal" id="modal-gartenbau">
-        <div class="modal-content">
-            <button class="modal-close" data-close="modal-gartenbau">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-header">
-                <div class="modal-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <h2>GaLaBau-Management</h2>
-            </div>
-            <div class="modal-tabs">
-                <button class="tab-btn active" data-tab="tab-gala-features">Features</button>
-                <button class="tab-btn" data-tab="tab-gala-demo">Live Demo</button>
-                <button class="tab-btn" data-tab="tab-gala-specs">Technisch</button>
-            </div>
-            <div class="modal-body">
-                <!-- Features Tab -->
-                <div class="tab-content active" id="tab-gala-features">
-                    <div class="features-list">
-                        <div class="feature-block">
-                            <i class="fas fa-map"></i>
-                            <h4>Tourenplanung</h4>
-                            <p>Intelligente Routenoptimierung für maximale Effizienz und minimale Fahrzeit.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-file-contract"></i>
-                            <h4>Pflegeverträge</h4>
-                            <p>Verwaltung von Daueraufträgen mit automatischen Abrechnungen.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-camera"></i>
-                            <h4>Fotodokumentation</h4>
-                            <p>Vor- und Nachher-Fotos mit Geolocation und Zeitstempel.</p>
-                        </div>
-                        <div class="feature-block">
-                            <i class="fas fa-leaf"></i>
-                            <h4>Pflanzendatenbank</h4>
-                            <p>Umfangreiche Pflanzendatenbank mit Pflegeanleitung.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Demo Tab -->
-                <div class="tab-content" id="tab-gala-demo">
-                    <div class="demo-container">
-                        <div class="tour-map">
-                            <div class="map-placeholder">
-                                <i class="fas fa-map-marked-alt"></i>
-                                <p>Tagesroute mit 8 Einsätzen</p>
-                            </div>
-                            <div class="tour-stops">
-                                <div class="stop-item">
-                                    <span class="stop-number">1</span>
-                                    <div>
-                                        <strong>Müller Privatgarten</strong>
-                                        <p>09:00 - Hecken schneiden</p>
-                                    </div>
-                                </div>
-                                <div class="stop-item">
-                                    <span class="stop-number">2</span>
-                                    <div>
-                                        <strong>Restaurant Zur Post</strong>
-                                        <p>10:30 - Pflegeeinsatz</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="demo-note"><i class="fas fa-info-circle"></i> GPS-basierte Tourenplanung mit Echtzeitaktualisierung.</p>
-                    </div>
-                </div>
-
-                <!-- Technisch Tab -->
-                <div class="tab-content" id="tab-gala-specs">
-                    <div class="specs-grid">
-                        <div class="spec-item">
-                            <strong>GPS-Tracking:</strong>
-                            <p>Echtzeit-Standortverfolgung</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Mobile App:</strong>
-                            <p>Offline-Funktion für Baustellen</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Fotoverwaltung:</strong>
-                            <p>Cloud-Backup mit Metadaten</p>
-                        </div>
-                        <div class="spec-item">
-                            <strong>Automatisierung:</strong>
-                            <p>Rechnungserstellung und Mahnwesen</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Nach oben scrollen">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Scripts -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script
+    <script src="script.js"></script>
+</body>
+</html>
